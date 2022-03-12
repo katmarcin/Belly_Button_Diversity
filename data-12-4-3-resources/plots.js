@@ -3,7 +3,7 @@ function init() {    // creates a dropdown menu of ID numbers dynamically
 
     d3.json("samples.json").then((data) => { // d3.json is used to read the data from samples.json, that data is assigned arbitrary argument name "data"
       console.log(data);
-      var sampleNames = data.names; // "names" array contains ID numebrs of all the study participants
+      var sampleNames = data.names; // "names" array contains ID numbers of all the study participants
       sampleNames.forEach((sample) => { //  forEach called on the sampleNamples array, in each element, dropdown menu "option" is appended "sample"
         selector 
           .append("option")
